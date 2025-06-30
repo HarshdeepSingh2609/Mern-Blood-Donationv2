@@ -29,10 +29,10 @@ app.use("/api/v1/analytics",require("./routes/analyticsRoutes"));
 //admin route
 app.use("/api/v1/admin",require("./routes/adminRoutes"))
 
-app.use(express.static(path.join(__dirname,"./client/build")));
-app.get("*",function(req,res) {
-    res.sendFile(path.join(__dirname,"./client/build/index.html"))
-})
+// app.use(express.static(path.join(__dirname,"./client/build")));
+// app.get("*",function(req,res) {
+//     res.sendFile(path.join(__dirname,"./client/build/index.html"))
+// })
 
 const port=process.env.PORT ||5000;
 app.listen(port,(req,res)=>{
