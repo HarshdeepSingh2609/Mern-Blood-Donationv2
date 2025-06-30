@@ -1,0 +1,53 @@
+.analytics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+.blood-card {
+  border-radius: 16px;
+  color: #1a1a1a;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.blood-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: #ffffffd6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blood-icon {
+  color: #e63946;
+  font-size: 22px;
+}
+
+.card-body {
+  padding: 18px 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card-footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 1rem;
+}

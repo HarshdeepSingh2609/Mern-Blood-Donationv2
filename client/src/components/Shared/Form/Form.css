@@ -1,0 +1,134 @@
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* More gap between each button */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between circle and label */
+}
+
+.form-check-label {
+  color: white !important; /* <-- this overrides Bootstrap */
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.form-check-input {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .form-check-label {
+    font-size: 14px;
+  }
+
+  .form-check-input {
+    transform: scale(1.1);
+  }
+}
+.form-container {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+input.form-control {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+input.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px cyan;
+  border-color: cyan;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-check {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-check:hover {
+  box-shadow: 0 0 8px cyan;
+}
+
+.form-check-input:checked + .form-check-label {
+  color: cyan;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  border: none;
+  padding: 8px 24px;
+  border-radius: 50px;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00c6ff;
+}
+.role-toggle {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.role-button {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 2px solid #00bfff;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.role-button:hover {
+  background-color: rgba(0, 191, 255, 0.2);
+}
+
+.role-button.active {
+  background-color: #00bfff;
+  color: white;
+}

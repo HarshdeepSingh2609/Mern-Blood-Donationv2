@@ -1,0 +1,135 @@
+/* Main Section */
+.about-section {
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 30px; /* Added padding for better spacing */
+  padding-bottom: 30px; /* Added padding for better spacing */
+}
+
+/* Heading Styling */
+.about-heading {
+  color: #e60000; /* Red color */
+  font-weight: 800;
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 10px; /* Adjust margin below heading */
+}
+
+/* Sub Text Styling */
+.about-subtext {
+  max-width: 900px;
+  margin: auto;
+  color: #333; /* Slightly darker for better readability */
+  line-height: 1.7; /* Increased line-height for better readability */
+  font-size: 1.25rem; /* Increased font size */
+  font-weight: 500; /* Made it a bit bolder */
+  margin-bottom: 4rem !important; /* Added !important to ensure override */
+}
+
+/* Card Styling */
+.feature-card {
+  border: none;
+  border-radius: 20px; /* Slightly larger border-radius for softer look */
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+  padding: 30px; /* Increased padding inside cards */
+}
+
+.feature-card:hover {
+  transform: translateY(-10px); /* Slightly more pronounced lift on hover */
+  box-shadow: 0 15px 35px rgba(230, 0, 0, 0.2); /* Stronger shadow on hover with a hint of red */
+}
+
+/* Icon Circle Styling */
+.icon-circle {
+  width: 100px; /* Size of the circle */
+  height: 100px; /* Size of the circle */
+  background-color: #fcebeb; /* Light red background for the circle */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the circle */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover .icon-circle {
+  background-color: #e60000; /* Red background on hover */
+  box-shadow: 0 6px 15px rgba(230, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Image Styling */
+.role-img {
+  width: 60px; /* Slightly smaller image to fit within the circle */
+  height: 60px; /* Slightly smaller image to fit within the circle */
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.feature-card:hover .role-img {
+  transform: scale(1.1);
+  filter: brightness(0) invert(1); /* Change icon to white on hover */
+}
+
+/* Title Styling */
+.role-title {
+  color: #111;
+  margin-top: 20px; /* Adjusted margin */
+  font-size: 1.5rem; /* Increased font size for titles */
+  font-weight: 700;
+}
+
+/* Description Styling */
+.role-desc {
+  color: #555;
+  font-size: 1.05rem; /* Slightly larger description text */
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2.5rem;
+  }
+  .about-subtext {
+    font-size: 1.1rem;
+    padding: 0 15px; /* Add some horizontal padding for smaller screens */
+  }
+  .feature-card {
+    padding: 25px;
+  }
+  .icon-circle {
+    width: 90px;
+    height: 90px;
+  }
+  .role-img {
+    width: 55px;
+    height: 55px;
+  }
+  .role-title {
+    font-size: 1.3rem;
+  }
+  .role-desc {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+  .about-subtext {
+    font-size: 1rem;
+  }
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+  }
+  .role-img {
+    width: 50px;
+    height: 50px;
+  }
+  .feature-card {
+    margin-bottom: 20px; /* Add space between cards on mobile */
+  }
+}

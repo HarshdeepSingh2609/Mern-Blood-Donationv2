@@ -1,0 +1,74 @@
+/* Navbar Base */
+.custom-navbar {
+  background-color: #f2f2f2; /* Light gray */
+  padding: 0.8rem 2rem;
+
+}
+
+/* Logo Icon */
+.logo-icon {
+  font-size: 2.5rem;
+  color: red;
+}
+
+/* Title */
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'serif';
+  color: #111;
+  text-transform: uppercase;
+}
+
+/* Navigation Links */
+.nav-menu .nav-link {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.nav-underline:hover::after {
+  width: 100%;
+}
+
+/* Optional hover text color */
+.nav-underline:hover {
+  color: red;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-menu {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-top: 0.5rem;
+  }
+}
+/* Active Link Style */
+.active-nav {
+  color: red !important;
+}
+
+.active-nav::after {
+  width: 100%;
+}

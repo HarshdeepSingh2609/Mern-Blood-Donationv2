@@ -1,0 +1,193 @@
+/* Main container centered in 90% of the screen */
+.full-bg {
+  width: 98vw;
+  height: 90vh;
+  margin: auto;
+  background-color: #fff;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Overlayed text content */
+.text-overlay {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 38%;
+  color: #222;
+  z-index: 2;
+}
+
+/* Styling for '#' */
+.hash {
+  color: red;
+  font-size: 100px;
+  font-weight: 1000;
+  margin: 0;
+  line-height: 0.8;
+}
+
+/* 'BE HERO' title */
+.hero {
+  color: red;
+  font-size: 96px;
+  font-weight: 800;
+  margin: 5px 0 10px 0;
+  letter-spacing: 6px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 30px;
+  color: #222;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+/* Red highlight */
+.highlight {
+  color: red;
+  font-weight: 800;
+}
+
+/* + and - */
+.symbols {
+  font-size: 24px;
+  color: red;
+  margin: 20px 0;
+}
+
+/* Description */
+.desc {
+  font-size: 25px;
+  color: #444;
+  margin: 15px 0;
+  max-width: 350px;
+  line-height: 1.6;
+}
+
+/* Social media icons */
+.icons {
+  margin-top: 25px;
+  font-size: 22px;
+  color: #333;
+}
+
+.icons i {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icons i:hover {
+  color: red;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .full-bg {
+    flex-direction: column;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+  }
+
+  .text-overlay {
+    position: static;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+
+  .hash {
+    font-size: 60px;
+  }
+
+  .hero {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .symbols {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .desc {
+    font-size: 14px;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .icons {
+    margin-top: 20px;
+  }
+}
+.cta-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cta-donate {
+  padding: 0.8rem 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-volunteer {
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-donate:hover {
+  background-color: darkred;
+}
+
+.cta-volunteer:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Responsive buttons */
+@media screen and (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cta-donate,
+  .cta-volunteer {
+    width: 80%;
+  }
+}

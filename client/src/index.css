@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+/* .form-container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: url("./components/Shared/MainpageContent/assets/piclogin2.png");
+  background-size: cover;
+
+}
+.form-container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: url("./components/Shared/MainpageContent/assets/registerpic.png");
+  background-size: cover;
+}
+
+.login-container{
+  height: 100vh;
+overflow: hidden;
+}
+.register-container{
+  height: 100vh;
+
+} */
+/* .mainimg{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+/* .mainimg img{
+ 
+  height: 580px;
+width: 100%;
+  background-size: cover;
+}
+.mainimg img:hover{
+  opacity: 0.95;
+} */
+
+/* .bloodgps{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+ 
+}
+
+.bloodgp {
+  position: relative;
+  background-color: rgba(165, 7, 7, 0.747);
+  border: 2px solid white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloodgp p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; /* To remove default margin 
+}
+
+.bloodgp:hover{
+  border: 1px solid red;
+  background-color: white;
+  color: black;
+
+}
+
+.features{
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.feature img{
+  height: 350px;
+  width: 230px;
+}
+
+.feature img:hover{
+  opacity: 0.7;
+} */
+
+
+.loginpage{
+  background-color: rgba(0, 0, 0, 0.666);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+.registerpage{
+  background-color: rgba(0, 0, 0, 0.666);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.footer{
+  display:flex;
+  justify-content: space-evenly;
+  min-height: 20vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* .aboutsec{
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+} */
+/* .whyblood{
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutpara{
+margin-top:10px ;
+padding: 50px;
+padding-top: 0;
+} */
+
+
+/*---------------spinner------------------------*/
+/*.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}*/
+
+/* .bg{
+  background-color: #B8E1F1;
+  display: flex;
+  justify-self: center;
+  padding: 10px;
+} */
+
+

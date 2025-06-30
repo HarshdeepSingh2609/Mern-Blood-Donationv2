@@ -1,0 +1,149 @@
+/* ======================== */
+/* Beautiful Inventory Modal */
+/* ======================== */
+
+.inventory-modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 50, 50, 0.2);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* ========== HEADER ========== */
+.inventory-modal-header {
+  background: linear-gradient(135deg, #ffe9e9, #ffdada);
+  border-bottom: 1px solid #ffbcbc;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #c62828;
+  letter-spacing: 0.5px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.btn-close {
+  filter: invert(0.5);
+  transition: transform 0.3s ease;
+}
+.btn-close:hover {
+  transform: scale(1.2);
+  filter: invert(0.8);
+}
+
+/* ========== BODY ========== */
+.inventory-modal-body {
+  padding: 24px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.inventory-modal-body strong {
+  color: #b71c1c;
+  font-weight: 600;
+}
+
+.form-select,
+.form-control {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: #c62828;
+  box-shadow: 0 0 0 4px rgba(198, 40, 40, 0.1);
+}
+
+/* Radio buttons */
+.form-check-input {
+  cursor: pointer;
+  accent-color: #c62828;
+}
+
+.form-check-label {
+  font-weight: 500;
+  color: #555;
+  margin-left: 4px;
+}
+
+/* ========== FOOTER ========== */
+.inventory-modal-footer {
+  padding: 20px 24px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.inventory-modal-footer .btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.inventory-modal-footer .btn-secondary {
+  background-color: #f3f3f3;
+  color: #333;
+  border: none;
+}
+.inventory-modal-footer .btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.inventory-modal-footer .btn-primary {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  box-shadow: 0 0 10px rgba(198, 40, 40, 0.4);
+}
+.inventory-modal-footer .btn-primary:hover {
+  background-color: #a42222;
+  box-shadow: 0 0 14px rgba(198, 40, 40, 0.6);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 576px) {
+  .modal-content {
+    margin: 10px;
+  }
+
+  .inventory-modal-body {
+    padding: 16px;
+  }
+
+  .inventory-modal-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inventory-modal-footer .btn {
+    width: 100%;
+  }
+}
