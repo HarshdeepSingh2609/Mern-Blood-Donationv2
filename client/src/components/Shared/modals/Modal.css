@@ -147,3 +147,20 @@
     width: 100%;
   }
 }
+
+.inventory-modal-body .form-check-label {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.inventory-modal-body .form-check-input:checked + .form-check-label {
+  color: #007bff;
+}
+
+.inventory-modal-select {
+  border-radius: 10px;
+}
+
+.inventory-modal-footer button {
+  border-radius: 8px;
+}
