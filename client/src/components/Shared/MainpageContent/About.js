@@ -1,30 +1,4 @@
-// import React from 'react'
-// import donorpic from "./assets/donorpic.png"
-// import adminpic from "./assets/adminpic.png"
-// import hospitalpic from "./assets/hospitalpic.png"
-// import orgpic from "./assets/orgimg.png"
-// const About = () => {
-//   return (
-//     <div className='about bg-light' style={{fontFamily:"sans-serif"}}>
-//     <h3 className='text-center' style={{fontWeight:"bolder"}}>About us</h3>
-//       <p className='text-center'>
-//       Our platform connects donors with organizations and hospitals, streamlining blood donations for medical needs.
-//       <br /> It simplifies the process, promoting a culture of giving and saving lives.<br />
-//       Together, we make a profound impact on public health and emergency preparedness.
-//       </p>
-//       <div className='features'>
-//        <div className='feature'>  <img src={donorpic} /></div>
-//         <div className='feature'><img src={hospitalpic} /></div>
-//         <div className='feature'>  <img src={orgpic} /> </div>
-//         <div className='feature'><img src={adminpic} /></div>
-      
-        
-//       </div>
-//     </div>
-//   )
-// }
 
-// export default About
 
 import React from 'react';
 import donorpic from './assets/donor.png';
