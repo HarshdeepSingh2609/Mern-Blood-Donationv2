@@ -68,8 +68,8 @@ This project aims to digitize and manage blood donations through a **role-based 
 - Bcrypt for password hashing
 
 **Deployment**:
-- Frontend: Vercel / Netlify
-- Backend: Render / Railway / Cyclic
+- Frontend: Vercel 
+- Backend: Render
 - Database: MongoDB Atlas
 
 ---
