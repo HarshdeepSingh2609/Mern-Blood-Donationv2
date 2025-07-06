@@ -62,6 +62,7 @@
   font-weight: 600;
 }
 
+/* Input and Select */
 .form-select,
 .form-control {
   border-radius: 10px;
@@ -70,8 +71,23 @@
   margin-bottom: 16px;
   border: 1px solid #ddd;
   transition: 0.3s ease;
+  color: #333 !important;
+  background-color: #fff !important;
 }
 
+.form-control::placeholder {
+  color: #aaa !important;
+}
+
+/* Additional fix to ensure input doesn't turn white */
+.inventory-modal-body input[type="email"],
+.inventory-modal-body input[type="number"] {
+  color: #333 !important;
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+}
+
+/* Focus States */
 .form-select:focus,
 .form-control:focus {
   border-color: #c62828;
@@ -88,6 +104,15 @@
   font-weight: 500;
   color: #555;
   margin-left: 4px;
+}
+
+.inventory-modal-body .form-check-label {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.inventory-modal-body .form-check-input:checked + .form-check-label {
+  color: #007bff;
 }
 
 /* ========== FOOTER ========== */
@@ -148,15 +173,7 @@
   }
 }
 
-.inventory-modal-body .form-check-label {
-  color: #000 !important;
-  font-weight: 600;
-}
-
-.inventory-modal-body .form-check-input:checked + .form-check-label {
-  color: #007bff;
-}
-
+/* Other tweaks */
 .inventory-modal-select {
   border-radius: 10px;
 }

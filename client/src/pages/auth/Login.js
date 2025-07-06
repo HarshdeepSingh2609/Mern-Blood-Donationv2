@@ -171,6 +171,71 @@
 // };
 
 // export default Login;
+
+
+
+
+
+
+
+
+
+
+
+
+//working code 1
+
+// import React, { useEffect } from 'react';
+// import Form from '../../components/Shared/Form/Form';
+// import { useSelector } from 'react-redux';
+// import Spinner from '../../components/Shared/Spinner';
+// import Navbar from '../../components/Shared/MainpageContent/Navbar';
+// import { useNavigate } from 'react-router-dom';
+// import './Login.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
+// const Login = () => {
+//   const { loading, error, user } = useSelector((state) => state.auth);
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     AOS.init({ duration: 1000, once: true });
+//   }, []);
+
+//   useEffect(() => {
+//     if (user) {
+//       navigate("/"); // redirect to home when login is successful
+//     }
+//   }, [user, navigate]);
+
+//   return (
+//     <div className="login-container">
+//       {error && <span>{alert(error)}</span>}
+//       {loading ? (
+//         <Spinner />
+//       ) : (
+//         <div className="row g-0">
+//           <div data-aos="fade-down"><Navbar /></div>
+//           <div className="form-container2" data-aos="zoom-in">
+//             <div className="loginpage">
+//               <Form formTitle="Login Page" submitBtn="Login" formType="Login" />
+//             </div>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Login;
+
+
+
+
+
+
+
 import React, { useEffect } from 'react';
 import Form from '../../components/Shared/Form/Form';
 import { useSelector } from 'react-redux';
@@ -191,7 +256,15 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-      navigate("/"); // redirect to home when login is successful
+      if (user.role === "organisation") {
+        navigate("/");
+      } else if (user.role === "donar") {
+        navigate("/donation");
+      } else if (user.role === "hospital") {
+        navigate("/consumer");
+      } else {
+        navigate("/login");
+      }
     }
   }, [user, navigate]);
 
