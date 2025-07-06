@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+console.log("🔥 inventoryModel.js HAS BEEN LOADED! Version: 2025-07-06-B");
 
 const inventorySchema = new mongoose.Schema(
   {
@@ -20,7 +21,7 @@ const inventorySchema = new mongoose.Schema(
       type: String,
       required: [true, "Donar Email is Required"],
     },
-    organisation: {  
+    organisation: {
       type: mongoose.Schema.Types.ObjectId, //This relationship implies that each inventory record is associated with a specific organization
       ref: "users",
       required: [true, "organisation is require"],
