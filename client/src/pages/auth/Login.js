@@ -262,8 +262,8 @@ const Login = () => {
         navigate("/donation");
       } else if (user.role === "hospital") {
         navigate("/consumer");
-      } else {
-        navigate("/login");
+      } else if (user.role==='admin') {
+        navigate("/admin");
       }
     }
   }, [user, navigate]);
